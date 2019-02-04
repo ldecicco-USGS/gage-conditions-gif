@@ -2,7 +2,7 @@
 prep_legend_fun <- function(percentiles_str, sites_color_palette,
                             x_pos = c('left', 'right'), y_pos = c('bottom','top'),
                             legend_cfg){
-
+  force(legend_cfg)
   x_pos <- match.arg(x_pos)
   y_pos <- match.arg(y_pos)
   col_fun <- colorRamp(sites_color_palette$with_percentile)

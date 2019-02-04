@@ -1,5 +1,5 @@
 prep_basemap_fun <- function(states_shifted, basemap_cfg) {
-
+  force(basemap_cfg)
   plot_fun <- function(){
 
     plot(states_shifted, add=TRUE,

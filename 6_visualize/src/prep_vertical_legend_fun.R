@@ -1,7 +1,7 @@
 
 prep_vertical_legend_fun <- function(percentiles_str, sites_color_palette,
                             x_pos, y_pos, legend_cfg){
-
+  force(legend_cfg)
   col_fun <- colorRamp(sites_color_palette$with_percentile)
   percentiles <- as.numeric(percentiles_str)/100
   legend_cols <- sapply(percentiles, FUN = function(x){

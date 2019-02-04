@@ -1,6 +1,6 @@
 
 prep_title_fun <- function(title_cfg){
-
+  force(title_cfg)
   plot_fun <- function(){
     # coordinate space (edges, width, height)
     coord_space <- par()$usr

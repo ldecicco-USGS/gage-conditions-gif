@@ -1,4 +1,4 @@
-combine_animation_frames <- function(gif_file, animation_cfg) {
+combine_animation_frames <- function(gif_file, animation_cfg, ...) {
   #build video from pngs with ffmpeg
   #note that this will use all frames in 6_visualize/tmp
   #have to rename files since can't use globbing with ffmpeg on Windows :(

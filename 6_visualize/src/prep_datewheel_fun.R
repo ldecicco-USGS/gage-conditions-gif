@@ -25,7 +25,7 @@ prep_datewheel_fun <- function(dateTime, viz_config, dates_config, datewheel_cfg
   }
 
   rm(viz_config, dates_config)
-
+  force(datewheel_cfg)
   plot_fun <- function(){
 
     # compute position info shared across multiple legend elements
